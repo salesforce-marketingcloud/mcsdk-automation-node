@@ -51,9 +51,5 @@ const SalesforceMarketingCloud = require('../../src');
 
     // Get the send status of the email send:
     let recipientSendStatus = await transactionalMessagingApi.getEmailSendStatusForRecipient(messageKey);
-    console.log('send status for recipient: ' + JSON.stringify(recipientSendStatus));
-
-    // Delete email send definition:
-    let deleteEmailDefinitionResult = await transactionalMessagingApi.deleteEmailDefinition(createEmailDefinitionResult.definitionKey);
-    console.log('deleteEmailDefinitionResult: ' + JSON.stringify(deleteEmailDefinitionResult));
+    console.log('recipientSendStatus: ' + JSON.stringify(recipientSendStatus));
 })();
