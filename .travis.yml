@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "12.10.0"
+
+branches:
+  only:
+    - master
+    - develop
+    - /^feature\/.*$/
+    - /^release\/.*$/
+    - /^hotfix\/.*$/
+    - /^*.0$/
+    - /^ci\/*.0$/
