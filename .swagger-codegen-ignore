@@ -25,3 +25,6 @@
 test/api/AssetApi.spec.js
 test/api/CampaignApi.spec.js
 test/api/TransactionalMessagingApi.spec.js
+git_push.sh
+mocha.opts
+.babelrc
