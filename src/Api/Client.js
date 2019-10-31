@@ -36,7 +36,7 @@ const EnvironmentConfigProvider = require('../EnvironmentConfigProvider');
                 _scope = clientConfig.scope;
             }
         }
-        
+    
 	    get assetApi() {
                 if(this._assetApi === undefined){
                     this._assetApi = new SalesforceMarketingCloud.AssetApi(
