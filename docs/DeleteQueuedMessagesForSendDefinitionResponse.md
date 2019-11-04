@@ -1,4 +1,4 @@
-# SalesforceMarketingCloudSdk.DeleteQueuedMessagesForSendDefinitionResponse
+# SalesforceMarketingCloud.DeleteQueuedMessagesForSendDefinitionResponse
 
 ## Properties
 Name | Type | Description | Notes

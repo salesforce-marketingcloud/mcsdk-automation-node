@@ -1,4 +1,4 @@
-# SalesforceMarketingCloudSdk.Recipient
+# SalesforceMarketingCloud.Recipient
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SalesforceMarketingCloudSdk.ApiError
+# SalesforceMarketingCloud.ApiError
 
 ## Properties
 Name | Type | Description | Notes

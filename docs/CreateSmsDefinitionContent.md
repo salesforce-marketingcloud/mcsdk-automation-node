@@ -1,4 +1,4 @@
-# SalesforceMarketingCloudSdk.CreateSmsDefinitionContent
+# SalesforceMarketingCloud.CreateSmsDefinitionContent
 
 ## Properties
 Name | Type | Description | Notes

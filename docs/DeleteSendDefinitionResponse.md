@@ -1,4 +1,4 @@
-# SalesforceMarketingCloudSdk.DeleteSendDefinitionResponse
+# SalesforceMarketingCloud.DeleteSendDefinitionResponse
 
 ## Properties
 Name | Type | Description | Notes

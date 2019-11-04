@@ -1,4 +1,4 @@
-# SalesforceMarketingCloudSdk.CreateSmsDefinitionSubscriptions
+# SalesforceMarketingCloud.CreateSmsDefinitionSubscriptions
 
 ## Properties
 Name | Type | Description | Notes

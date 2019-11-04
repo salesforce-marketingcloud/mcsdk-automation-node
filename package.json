@@ -1,5 +1,5 @@
 {
-  "name": "salesforce-marketing-cloud-sdk",
+  "name": "SalesforceMarketingCloud",
   "version": "1.0.0",
   "description": "Marketing_Clouds_REST_API_is_our_newest_API__It_supports_multi_channel_use_cases_is_much_more_lightweight_and_easy_to_use_than_our_SOAP_API_and_is_getting_more_comprehensive_with_every_release_",
   "license": "Apache 2.0",
