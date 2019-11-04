@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.Attributes
+# SalesforceMarketingCloudSdk.Attributes
 
 ## Properties
 Name | Type | Description | Notes
