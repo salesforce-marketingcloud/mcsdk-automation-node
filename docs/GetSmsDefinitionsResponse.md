@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.GetSmsDefinitionsResponse
+# SalesforceMarketingCloudSdk.GetSmsDefinitionsResponse
 
 ## Properties
 Name | Type | Description | Notes

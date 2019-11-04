@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.SharingProperties
+# SalesforceMarketingCloudSdk.SharingProperties
 
 ## Properties
 Name | Type | Description | Notes

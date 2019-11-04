@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.SendSmsToMultipleRecipientsRequest
+# SalesforceMarketingCloudSdk.SendSmsToMultipleRecipientsRequest
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.TransactionalMessagingApi
+# SalesforceMarketingCloudSdk.TransactionalMessagingApi
 
 All URIs are relative to *https://www.exacttargetapis.com*
 
@@ -38,11 +38,11 @@ Creates the definition for an email.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
-let body = new SalesforceMarketingCloud.CreateEmailDefinitionRequest(); // CreateEmailDefinitionRequest | JSON Parameters
+let body = new SalesforceMarketingCloudSdk.CreateEmailDefinitionRequest(); // CreateEmailDefinitionRequest | JSON Parameters
 
 apiInstance.createEmailDefinition(body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -81,11 +81,11 @@ Creates the definition for an SMS.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
-let body = new SalesforceMarketingCloud.CreateSmsDefinitionRequest(); // CreateSmsDefinitionRequest | JSON Parameters
+let body = new SalesforceMarketingCloudSdk.CreateSmsDefinitionRequest(); // CreateSmsDefinitionRequest | JSON Parameters
 
 apiInstance.createSmsDefinition(body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -124,9 +124,9 @@ Deletes an email definition. You can&#39;t restore a deleted definition. The del
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the definition to delete
 
@@ -167,9 +167,9 @@ Deletes the queue for an email definition. The email definition must be in inact
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the email definition
 
@@ -210,9 +210,9 @@ Deletes the queue for a SMS definition. The SMS definition must be in inactive s
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the SMS definition
 
@@ -253,9 +253,9 @@ Deletes an sms definition. You can&#39;t restore a deleted definition. The delet
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the definition to delete
 
@@ -296,9 +296,9 @@ Gets email definition configuration details for a definition key.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the definition to get
 
@@ -339,9 +339,9 @@ Gets a list of email definitions.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let opts = { 
   'status': "status_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
@@ -389,9 +389,9 @@ Gets the send status for a message. Because this route is rate-limited, use it f
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let messageKey = "messageKey_example"; // String | Unique identifier to track message send status. You must provide it in singleton requests using the recipient attribute. To provide it in batch requests, use the recipients array attribute. If you don’t provide the message key for recipients, it’s generated in the response.
 
@@ -432,9 +432,9 @@ Gets a paginated list of messages that were not sent, ordered from oldest to new
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let type = "type_example"; // String | Only notSent is supported.
 
@@ -481,9 +481,9 @@ Gets metrics for the messages of an email definition. Applies to messages that a
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the email definition
 
@@ -524,9 +524,9 @@ Gets metrics for the messages of a SMS definition. Applies to messages that are 
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the SMS definition
 
@@ -567,9 +567,9 @@ Gets a paginated list of messages that were not sent, ordered from oldest to new
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let type = "type_example"; // String | Only notSent is supported.
 
@@ -616,9 +616,9 @@ Gets SMS definition configuration details for a definition key.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the definition to get
 
@@ -659,9 +659,9 @@ Gets a list of SMS definitions.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let opts = { 
   'status': "status_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
@@ -709,9 +709,9 @@ Gets the send status for a message. Because this route is rate-limited, use it f
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let messageKey = "messageKey_example"; // String | Unique identifier to track message send status. You must provide it in singleton requests using the recipient attribute. To provide message key in batch requests, use the recipients array attribute. If you don’t provide the message key for recipients, it’s generated in the response.
 
@@ -752,13 +752,13 @@ Updates a specific email definition.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the definition.
 
-let body = new SalesforceMarketingCloud.UpdateEmailDefinitionRequest(); // UpdateEmailDefinitionRequest | JSON Parameters
+let body = new SalesforceMarketingCloudSdk.UpdateEmailDefinitionRequest(); // UpdateEmailDefinitionRequest | JSON Parameters
 
 apiInstance.partiallyUpdateEmailDefinition(definitionKey, body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -798,13 +798,13 @@ Updates a specific SMS definition.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let definitionKey = "definitionKey_example"; // String | Unique identifier of the definition.
 
-let body = new SalesforceMarketingCloud.UpdateSmsDefinitionRequest(); // UpdateSmsDefinitionRequest | JSON Parameters
+let body = new SalesforceMarketingCloudSdk.UpdateSmsDefinitionRequest(); // UpdateSmsDefinitionRequest | JSON Parameters
 
 apiInstance.partiallyUpdateSmsDefinition(definitionKey, body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -844,11 +844,11 @@ Sends a message to multiple recipients using an email definition. You can provid
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
-let body = new SalesforceMarketingCloud.SendEmailToMultipleRecipientsRequest(); // SendEmailToMultipleRecipientsRequest | JSON Parameters
+let body = new SalesforceMarketingCloudSdk.SendEmailToMultipleRecipientsRequest(); // SendEmailToMultipleRecipientsRequest | JSON Parameters
 
 apiInstance.sendEmailToMultipleRecipients(body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -887,13 +887,13 @@ Sends a message to a single recipient via an email definition using a messageKey
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let messageKey = "messageKey_example"; // String | Unique identifier used to track message status. Can be automatically created when you create a message or provided as part of the request. Each recipient in a request must have a unique messageKey. If you use a duplicate messageKey in the same send request, the message is rejected.
 
-let body = new SalesforceMarketingCloud.SendEmailToSingleRecipientRequest(); // SendEmailToSingleRecipientRequest | JSON Parameters
+let body = new SalesforceMarketingCloudSdk.SendEmailToSingleRecipientRequest(); // SendEmailToSingleRecipientRequest | JSON Parameters
 
 apiInstance.sendEmailToSingleRecipient(messageKey, body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -933,11 +933,11 @@ Sends a message to multiple recipients using an email definition. You can provid
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
-let body = new SalesforceMarketingCloud.SendSmsToMultipleRecipientsRequest(); // SendSmsToMultipleRecipientsRequest | JSON Parameters
+let body = new SalesforceMarketingCloudSdk.SendSmsToMultipleRecipientsRequest(); // SendSmsToMultipleRecipientsRequest | JSON Parameters
 
 apiInstance.sendSmsToMultipleRecipients(body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -976,13 +976,13 @@ Sends a message to a single recipient via a SMS definition using a messageKey pa
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloudSdk = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
+let apiInstance = new SalesforceMarketingCloudSdk.TransactionalMessagingApi();
 
 let messageKey = "messageKey_example"; // String | Unique identifier of the definition used to track message status. The messageKey can be created automatically when you create a message, or you can provide it as part of the request. Each recipient in a request must have a unique messageKey. If you use a duplicate messageKey in the same send request, the message is rejected.
 
-let body = new SalesforceMarketingCloud.SendSmsToSingleRecipientRequest(); // SendSmsToSingleRecipientRequest | JSON Parameters
+let body = new SalesforceMarketingCloudSdk.SendSmsToSingleRecipientRequest(); // SendSmsToSingleRecipientRequest | JSON Parameters
 
 apiInstance.sendSmsToSingleRecipient(messageKey, body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
