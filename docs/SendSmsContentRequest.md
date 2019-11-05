@@ -1,4 +1,4 @@
-# salesforce-marketing-cloud-sdk.SendSmsContentRequest
+# SalesforceMarketingCloud.SendSmsContentRequest
 
 ## Properties
 Name | Type | Description | Notes

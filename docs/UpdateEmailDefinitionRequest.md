@@ -1,4 +1,4 @@
-# salesforce-marketing-cloud-sdk.UpdateEmailDefinitionRequest
+# SalesforceMarketingCloud.UpdateEmailDefinitionRequest
 
 ## Properties
 Name | Type | Description | Notes

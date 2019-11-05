@@ -1,4 +1,4 @@
-# salesforce-marketing-cloud-sdk.GetQueueMetricsForSendDefinitionResponse
+# SalesforceMarketingCloud.GetQueueMetricsForSendDefinitionResponse
 
 ## Properties
 Name | Type | Description | Notes

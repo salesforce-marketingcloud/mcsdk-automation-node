@@ -1,4 +1,4 @@
-# salesforce-marketing-cloud-sdk.CampaignApi
+# SalesforceMarketingCloud.CampaignApi
 
 All URIs are relative to *https://www.exacttargetapis.com*
 
@@ -19,11 +19,11 @@ Creates a campaign.
 
 ### Example
 ```javascript
-const salesforce-marketing-cloud-sdk = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new salesforce-marketing-cloud-sdk.CampaignApi();
+let apiInstance = new SalesforceMarketingCloud.CampaignApi();
 
-let body = new salesforce-marketing-cloud-sdk.Campaign(); // Campaign | JSON Parameters
+let body = new SalesforceMarketingCloud.Campaign(); // Campaign | JSON Parameters
 
 apiInstance.createCampaign(body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -62,9 +62,9 @@ Deletes a campaign.
 
 ### Example
 ```javascript
-const salesforce-marketing-cloud-sdk = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new salesforce-marketing-cloud-sdk.CampaignApi();
+let apiInstance = new SalesforceMarketingCloud.CampaignApi();
 
 let id = "id_example"; // String | The ID of the campaign to delete
 
@@ -105,9 +105,9 @@ Retrieves a campaign.
 
 ### Example
 ```javascript
-const salesforce-marketing-cloud-sdk = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
 
-let apiInstance = new salesforce-marketing-cloud-sdk.CampaignApi();
+let apiInstance = new SalesforceMarketingCloud.CampaignApi();
 
 let id = "id_example"; // String | Campaign ID
 

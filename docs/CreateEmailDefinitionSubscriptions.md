@@ -1,4 +1,4 @@
-# salesforce-marketing-cloud-sdk.CreateEmailDefinitionSubscriptions
+# SalesforceMarketingCloud.CreateEmailDefinitionSubscriptions
 
 ## Properties
 Name | Type | Description | Notes

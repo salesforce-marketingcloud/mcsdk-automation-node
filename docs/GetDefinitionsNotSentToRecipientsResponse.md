@@ -1,4 +1,4 @@
-# salesforce-marketing-cloud-sdk.GetDefinitionsNotSentToRecipientsResponse
+# SalesforceMarketingCloud.GetDefinitionsNotSentToRecipientsResponse
 
 ## Properties
 Name | Type | Description | Notes

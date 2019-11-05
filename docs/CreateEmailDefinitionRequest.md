@@ -1,4 +1,4 @@
-# salesforce-marketing-cloud-sdk.CreateEmailDefinitionRequest
+# SalesforceMarketingCloud.CreateEmailDefinitionRequest
 
 ## Properties
 Name | Type | Description | Notes

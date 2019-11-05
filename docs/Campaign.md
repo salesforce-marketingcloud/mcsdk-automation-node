@@ -1,4 +1,4 @@
-# salesforce-marketing-cloud-sdk.Campaign
+# SalesforceMarketingCloud.Campaign
 
 ## Properties
 Name | Type | Description | Notes
