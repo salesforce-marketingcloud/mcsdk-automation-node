@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.SendDefinitionResponseItem
+# salesforce-marketing-cloud-sdk.SendDefinitionResponseItem
 
 ## Properties
 Name | Type | Description | Notes

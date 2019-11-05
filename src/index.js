@@ -59,9 +59,9 @@ const TransactionalMessagingApi = require ('./Api/TransactionalMessagingApi');
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var SalesforceMarketingCloud = require('index'); // See note below*.
-* var xxxSvc = new SalesforceMarketingCloud.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new SalesforceMarketingCloud.Yyy(); // Construct a model instance.
+* var salesforce-marketing-cloud-sdk = require('index'); // See note below*.
+* var xxxSvc = new salesforce-marketing-cloud-sdk.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new salesforce-marketing-cloud-sdk.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -73,8 +73,8 @@ const TransactionalMessagingApi = require ('./Api/TransactionalMessagingApi');
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new SalesforceMarketingCloud.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new SalesforceMarketingCloud.Yyy(); // Construct a model instance.
+* var xxxSvc = new salesforce-marketing-cloud-sdk.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new salesforce-marketing-cloud-sdk.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

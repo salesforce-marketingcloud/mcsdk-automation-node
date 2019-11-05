@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.SendDefinitionToSingleRecipientResponse
+# salesforce-marketing-cloud-sdk.SendDefinitionToSingleRecipientResponse
 
 ## Properties
 Name | Type | Description | Notes

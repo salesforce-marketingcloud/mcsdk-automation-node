@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.CreateSmsDefinitionRequest
+# salesforce-marketing-cloud-sdk.CreateSmsDefinitionRequest
 
 ## Properties
 Name | Type | Description | Notes

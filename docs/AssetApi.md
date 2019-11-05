@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.AssetApi
+# salesforce-marketing-cloud-sdk.AssetApi
 
 All URIs are relative to *https://www.exacttargetapis.com*
 
@@ -20,11 +20,11 @@ Creates a new asset.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const salesforce-marketing-cloud-sdk = require ('SalesforceMarketingCloud');
 
-let apiInstance = new SalesforceMarketingCloud.AssetApi();
+let apiInstance = new salesforce-marketing-cloud-sdk.AssetApi();
 
-let body = new SalesforceMarketingCloud.Asset(); // Asset | JSON Parameters
+let body = new salesforce-marketing-cloud-sdk.Asset(); // Asset | JSON Parameters
 
 apiInstance.createAsset(body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -63,9 +63,9 @@ Deletes an asset.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const salesforce-marketing-cloud-sdk = require ('SalesforceMarketingCloud');
 
-let apiInstance = new SalesforceMarketingCloud.AssetApi();
+let apiInstance = new salesforce-marketing-cloud-sdk.AssetApi();
 
 let id = 8.14; // Number | The ID of the asset to delete
 
@@ -106,9 +106,9 @@ Gets an asset by ID.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const salesforce-marketing-cloud-sdk = require ('SalesforceMarketingCloud');
 
-let apiInstance = new SalesforceMarketingCloud.AssetApi();
+let apiInstance = new salesforce-marketing-cloud-sdk.AssetApi();
 
 let id = 8.14; // Number | The ID of the asset
 
@@ -149,13 +149,13 @@ Updates part of an asset.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const salesforce-marketing-cloud-sdk = require ('SalesforceMarketingCloud');
 
-let apiInstance = new SalesforceMarketingCloud.AssetApi();
+let apiInstance = new salesforce-marketing-cloud-sdk.AssetApi();
 
 let id = 8.14; // Number | The ID of the asset to update
 
-let body = new SalesforceMarketingCloud.Asset(); // Asset | JSON Parameters
+let body = new salesforce-marketing-cloud-sdk.Asset(); // Asset | JSON Parameters
 
 apiInstance.partiallyUpdateAssetById(id, body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

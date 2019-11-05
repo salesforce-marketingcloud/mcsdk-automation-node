@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.Asset
+# salesforce-marketing-cloud-sdk.Asset
 
 ## Properties
 Name | Type | Description | Notes

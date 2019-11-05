@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.GetDefinitionSendStatusForRecipientResponse
+# salesforce-marketing-cloud-sdk.GetDefinitionSendStatusForRecipientResponse
 
 ## Properties
 Name | Type | Description | Notes

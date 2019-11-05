@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.SendEmailToSingleRecipientRequest
+# salesforce-marketing-cloud-sdk.SendEmailToSingleRecipientRequest
 
 ## Properties
 Name | Type | Description | Notes

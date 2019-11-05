@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.UpdateSmsDefinitionRequest
+# salesforce-marketing-cloud-sdk.UpdateSmsDefinitionRequest
 
 ## Properties
 Name | Type | Description | Notes

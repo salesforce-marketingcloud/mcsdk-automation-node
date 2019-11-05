@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.GetEmailDefinitionsResponse
+# salesforce-marketing-cloud-sdk.GetEmailDefinitionsResponse
 
 ## Properties
 Name | Type | Description | Notes

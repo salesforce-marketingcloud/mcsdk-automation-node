@@ -1,4 +1,4 @@
-# SalesforceMarketingCloud.SendDefinitionToMultipleRecipientsResponse
+# salesforce-marketing-cloud-sdk.SendDefinitionToMultipleRecipientsResponse
 
 ## Properties
 Name | Type | Description | Notes
