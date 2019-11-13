@@ -38,7 +38,7 @@ Creates the definition for an email.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -81,7 +81,7 @@ Creates the definition for an SMS.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -124,7 +124,7 @@ Deletes an email definition. You can&#39;t restore a deleted definition. The del
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -167,7 +167,7 @@ Deletes the queue for an email definition. The email definition must be in inact
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -210,7 +210,7 @@ Deletes the queue for a SMS definition. The SMS definition must be in inactive s
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -253,7 +253,7 @@ Deletes an sms definition. You can&#39;t restore a deleted definition. The delet
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -296,7 +296,7 @@ Gets email definition configuration details for a definition key.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -339,12 +339,12 @@ Gets a list of email definitions.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
 let opts = { 
-  'status': "status_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
+  'filter': "filter_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
   'pageSize': 8.14, // Number | Number of definitions, which are array elements, to return per paged response.
   'page': 8.14, // Number | Page number to return.
   'orderBy': "orderBy_example" // String | Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status.
@@ -361,7 +361,7 @@ apiInstance.getEmailDefinitions(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
+ **filter** | **String**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
  **pageSize** | **Number**| Number of definitions, which are array elements, to return per paged response. | [optional] 
  **page** | **Number**| Page number to return. | [optional] 
  **orderBy** | **String**| Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. | [optional] 
@@ -389,7 +389,7 @@ Gets the send status for a message. Because this route is rate-limited, use it f
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -432,7 +432,7 @@ Gets a paginated list of messages that were not sent, ordered from oldest to new
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -481,7 +481,7 @@ Gets metrics for the messages of an email definition. Applies to messages that a
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -524,7 +524,7 @@ Gets metrics for the messages of a SMS definition. Applies to messages that are 
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -567,7 +567,7 @@ Gets a paginated list of messages that were not sent, ordered from oldest to new
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -616,7 +616,7 @@ Gets SMS definition configuration details for a definition key.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -659,12 +659,12 @@ Gets a list of SMS definitions.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
 let opts = { 
-  'status': "status_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
+  'filter': "filter_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
   'pageSize': 8.14, // Number | Number of definitions, which are array elements, to return per paged response.
   'page': 8.14, // Number | Page number to return.
   'orderBy': "orderBy_example" // String | Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status.
@@ -681,7 +681,7 @@ apiInstance.getSmsDefinitions(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
+ **filter** | **String**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
  **pageSize** | **Number**| Number of definitions, which are array elements, to return per paged response. | [optional] 
  **page** | **Number**| Page number to return. | [optional] 
  **orderBy** | **String**| Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. | [optional] 
@@ -709,7 +709,7 @@ Gets the send status for a message. Because this route is rate-limited, use it f
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -752,7 +752,7 @@ Updates a specific email definition.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -798,7 +798,7 @@ Updates a specific SMS definition.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -844,7 +844,7 @@ Sends a message to multiple recipients using an email definition. You can provid
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -887,7 +887,7 @@ Sends a message to a single recipient via an email definition using a messageKey
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -933,7 +933,7 @@ Sends a message to multiple recipients using an email definition. You can provid
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
@@ -976,7 +976,7 @@ Sends a message to a single recipient via a SMS definition using a messageKey pa
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
