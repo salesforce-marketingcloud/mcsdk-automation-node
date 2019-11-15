@@ -13,7 +13,7 @@
 
 
 const ApiClient = require ('../ApiClient');
-const CreateEmailDefinitionRequest = require ('./CreateEmailDefinitionRequest');
+const EmailDefinition = require ('./EmailDefinition');
 
 
 
@@ -61,7 +61,7 @@ module.exports = class GetEmailDefinitionsResponse{
                 obj['requestId'] = ApiClient.convertToType(data['requestId'], 'String');
             }
             if (data.hasOwnProperty('definitions')) {
-                obj['definitions'] = ApiClient.convertToType(data['definitions'], [CreateEmailDefinitionRequest]);
+                obj['definitions'] = ApiClient.convertToType(data['definitions'], [EmailDefinition]);
             }
             if (data.hasOwnProperty('count')) {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
@@ -82,7 +82,7 @@ module.exports = class GetEmailDefinitionsResponse{
     */
     requestId = undefined;
     /**
-    * @member {Array.<module:Model/CreateEmailDefinitionRequest>} definitions
+    * @member {Array.<module:Model/EmailDefinition>} definitions
     */
     definitions = undefined;
     /**

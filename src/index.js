@@ -18,15 +18,12 @@ const Asset = require ('./Model/Asset');
 const AssetType = require ('./Model/AssetType');
 const Attributes = require ('./Model/Attributes');
 const Campaign = require ('./Model/Campaign');
-const CreateEmailDefinitionContent = require ('./Model/CreateEmailDefinitionContent');
-const CreateEmailDefinitionOptionsRequest = require ('./Model/CreateEmailDefinitionOptionsRequest');
-const CreateEmailDefinitionRequest = require ('./Model/CreateEmailDefinitionRequest');
-const CreateEmailDefinitionSubscriptions = require ('./Model/CreateEmailDefinitionSubscriptions');
-const CreateSmsDefinitionContent = require ('./Model/CreateSmsDefinitionContent');
-const CreateSmsDefinitionRequest = require ('./Model/CreateSmsDefinitionRequest');
-const CreateSmsDefinitionSubscriptions = require ('./Model/CreateSmsDefinitionSubscriptions');
 const DeleteQueuedMessagesForSendDefinitionResponse = require ('./Model/DeleteQueuedMessagesForSendDefinitionResponse');
 const DeleteSendDefinitionResponse = require ('./Model/DeleteSendDefinitionResponse');
+const EmailDefinition = require ('./Model/EmailDefinition');
+const EmailDefinitionContent = require ('./Model/EmailDefinitionContent');
+const EmailDefinitionOptions = require ('./Model/EmailDefinitionOptions');
+const EmailDefinitionSubscriptions = require ('./Model/EmailDefinitionSubscriptions');
 const GetDefinitionSendStatusForRecipientResponse = require ('./Model/GetDefinitionSendStatusForRecipientResponse');
 const GetDefinitionSendStatusForRecipientResponseInfo = require ('./Model/GetDefinitionSendStatusForRecipientResponseInfo');
 const GetDefinitionsNotSentToRecipientsMessage = require ('./Model/GetDefinitionsNotSentToRecipientsMessage');
@@ -46,6 +43,9 @@ const SendSmsToMultipleRecipientsRequest = require ('./Model/SendSmsToMultipleRe
 const SendSmsToMultipleRecipientsSubscriptionsRequest = require ('./Model/SendSmsToMultipleRecipientsSubscriptionsRequest');
 const SendSmsToSingleRecipientRequest = require ('./Model/SendSmsToSingleRecipientRequest');
 const SharingProperties = require ('./Model/SharingProperties');
+const SmsDefinition = require ('./Model/SmsDefinition');
+const SmsDefinitionContent = require ('./Model/SmsDefinitionContent');
+const SmsDefinitionSubscriptions = require ('./Model/SmsDefinitionSubscriptions');
 const UpdateEmailDefinitionRequest = require ('./Model/UpdateEmailDefinitionRequest');
 const UpdateSmsDefinitionRequest = require ('./Model/UpdateSmsDefinitionRequest');
 const AssetApi = require ('./Api/AssetApi');
@@ -122,48 +122,6 @@ module.exports={
     Campaign,
 
     /**
-     * The CreateEmailDefinitionContent model constructor.
-     * @property {module:Model/CreateEmailDefinitionContent}
-     */
-    CreateEmailDefinitionContent,
-
-    /**
-     * The CreateEmailDefinitionOptionsRequest model constructor.
-     * @property {module:Model/CreateEmailDefinitionOptionsRequest}
-     */
-    CreateEmailDefinitionOptionsRequest,
-
-    /**
-     * The CreateEmailDefinitionRequest model constructor.
-     * @property {module:Model/CreateEmailDefinitionRequest}
-     */
-    CreateEmailDefinitionRequest,
-
-    /**
-     * The CreateEmailDefinitionSubscriptions model constructor.
-     * @property {module:Model/CreateEmailDefinitionSubscriptions}
-     */
-    CreateEmailDefinitionSubscriptions,
-
-    /**
-     * The CreateSmsDefinitionContent model constructor.
-     * @property {module:Model/CreateSmsDefinitionContent}
-     */
-    CreateSmsDefinitionContent,
-
-    /**
-     * The CreateSmsDefinitionRequest model constructor.
-     * @property {module:Model/CreateSmsDefinitionRequest}
-     */
-    CreateSmsDefinitionRequest,
-
-    /**
-     * The CreateSmsDefinitionSubscriptions model constructor.
-     * @property {module:Model/CreateSmsDefinitionSubscriptions}
-     */
-    CreateSmsDefinitionSubscriptions,
-
-    /**
      * The DeleteQueuedMessagesForSendDefinitionResponse model constructor.
      * @property {module:Model/DeleteQueuedMessagesForSendDefinitionResponse}
      */
@@ -174,6 +132,30 @@ module.exports={
      * @property {module:Model/DeleteSendDefinitionResponse}
      */
     DeleteSendDefinitionResponse,
+
+    /**
+     * The EmailDefinition model constructor.
+     * @property {module:Model/EmailDefinition}
+     */
+    EmailDefinition,
+
+    /**
+     * The EmailDefinitionContent model constructor.
+     * @property {module:Model/EmailDefinitionContent}
+     */
+    EmailDefinitionContent,
+
+    /**
+     * The EmailDefinitionOptions model constructor.
+     * @property {module:Model/EmailDefinitionOptions}
+     */
+    EmailDefinitionOptions,
+
+    /**
+     * The EmailDefinitionSubscriptions model constructor.
+     * @property {module:Model/EmailDefinitionSubscriptions}
+     */
+    EmailDefinitionSubscriptions,
 
     /**
      * The GetDefinitionSendStatusForRecipientResponse model constructor.
@@ -288,6 +270,24 @@ module.exports={
      * @property {module:Model/SharingProperties}
      */
     SharingProperties,
+
+    /**
+     * The SmsDefinition model constructor.
+     * @property {module:Model/SmsDefinition}
+     */
+    SmsDefinition,
+
+    /**
+     * The SmsDefinitionContent model constructor.
+     * @property {module:Model/SmsDefinitionContent}
+     */
+    SmsDefinitionContent,
+
+    /**
+     * The SmsDefinitionSubscriptions model constructor.
+     * @property {module:Model/SmsDefinitionSubscriptions}
+     */
+    SmsDefinitionSubscriptions,
 
     /**
      * The UpdateEmailDefinitionRequest model constructor.
