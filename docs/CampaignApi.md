@@ -19,7 +19,7 @@ Creates a campaign.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.CampaignApi();
 
@@ -62,7 +62,7 @@ Deletes a campaign.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.CampaignApi();
 
@@ -105,7 +105,7 @@ Retrieves a campaign.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.CampaignApi();
 
