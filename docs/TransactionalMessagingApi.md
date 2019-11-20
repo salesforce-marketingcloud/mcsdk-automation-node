@@ -344,7 +344,7 @@ const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
 let opts = { 
-  'status': "status_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
+  'filter': "filter_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
   'pageSize': 8.14, // Number | Number of definitions, which are array elements, to return per paged response.
   'page': 8.14, // Number | Page number to return.
   'orderBy': "orderBy_example" // String | Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status.
@@ -361,7 +361,7 @@ apiInstance.getEmailDefinitions(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
+ **filter** | **String**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
  **pageSize** | **Number**| Number of definitions, which are array elements, to return per paged response. | [optional] 
  **page** | **Number**| Page number to return. | [optional] 
  **orderBy** | **String**| Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. | [optional] 
@@ -664,7 +664,7 @@ const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
 let opts = { 
-  'status': "status_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
+  'filter': "filter_example", // String | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
   'pageSize': 8.14, // Number | Number of definitions, which are array elements, to return per paged response.
   'page': 8.14, // Number | Page number to return.
   'orderBy': "orderBy_example" // String | Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status.
@@ -681,7 +681,7 @@ apiInstance.getSmsDefinitions(opts).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
+ **filter** | **String**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
  **pageSize** | **Number**| Number of definitions, which are array elements, to return per paged response. | [optional] 
  **page** | **Number**| Page number to return. | [optional] 
  **orderBy** | **String**| Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. | [optional] 

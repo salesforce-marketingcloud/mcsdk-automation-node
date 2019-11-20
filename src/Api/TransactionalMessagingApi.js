@@ -411,7 +411,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * getEmailDefinitions
      * Gets a list of email definitions.
      * @param {Object} opts Optional parameters
-     * @param {module:Model/String} opts.status Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
+     * @param {module:Model/String} opts.filter Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
      * @param {Number} opts.pageSize Number of definitions, which are array elements, to return per paged response.
      * @param {Number} opts.page Page number to return.
      * @param {module:Model/String} opts.orderBy Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status.
@@ -425,10 +425,10 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
       let pathParams = {
       };
       let queryParams = {
-        'status': opts['status'],
-        'pageSize': opts['pageSize'],
-        'page': opts['page'],
-        'orderBy': opts['orderBy']
+        '$filter': opts['filter'],
+        '$pageSize': opts['pageSize'],
+        '$page': opts['page'],
+        '$orderBy': opts['orderBy']
       };
       let headerParams = {
       };
@@ -451,7 +451,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * getEmailDefinitions
      * Gets a list of email definitions.
      * @param {Object} opts Optional parameters
-     * @param {module:Model/String} opts.status Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
+     * @param {module:Model/String} opts.filter Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
      * @param {Number} opts.pageSize Number of definitions, which are array elements, to return per paged response.
      * @param {Number} opts.page Page number to return.
      * @param {module:Model/String} opts.orderBy Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status.
@@ -793,7 +793,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * getSmsDefinitions
      * Gets a list of SMS definitions.
      * @param {Object} opts Optional parameters
-     * @param {module:Model/String} opts.status Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
+     * @param {module:Model/String} opts.filter Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
      * @param {Number} opts.pageSize Number of definitions, which are array elements, to return per paged response.
      * @param {Number} opts.page Page number to return.
      * @param {module:Model/String} opts.orderBy Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status.
@@ -807,10 +807,10 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
       let pathParams = {
       };
       let queryParams = {
-        'status': opts['status'],
-        'pageSize': opts['pageSize'],
-        'page': opts['page'],
-        'orderBy': opts['orderBy']
+        '$filter': opts['filter'],
+        '$pageSize': opts['pageSize'],
+        '$page': opts['page'],
+        '$orderBy': opts['orderBy']
       };
       let headerParams = {
       };
@@ -833,7 +833,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * getSmsDefinitions
      * Gets a list of SMS definitions.
      * @param {Object} opts Optional parameters
-     * @param {module:Model/String} opts.status Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
+     * @param {module:Model/String} opts.filter Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq.
      * @param {Number} opts.pageSize Number of definitions, which are array elements, to return per paged response.
      * @param {Number} opts.page Page number to return.
      * @param {module:Model/String} opts.orderBy Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status.
