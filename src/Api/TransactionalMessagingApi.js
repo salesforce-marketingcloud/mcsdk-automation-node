@@ -13,10 +13,9 @@
 
 
 const ApiError = require ('../Model/ApiError');
-const CreateEmailDefinitionRequest = require ('../Model/CreateEmailDefinitionRequest');
-const CreateSmsDefinitionRequest = require ('../Model/CreateSmsDefinitionRequest');
 const DeleteQueuedMessagesForSendDefinitionResponse = require ('../Model/DeleteQueuedMessagesForSendDefinitionResponse');
 const DeleteSendDefinitionResponse = require ('../Model/DeleteSendDefinitionResponse');
+const EmailDefinition = require ('../Model/EmailDefinition');
 const GetDefinitionSendStatusForRecipientResponse = require ('../Model/GetDefinitionSendStatusForRecipientResponse');
 const GetDefinitionsNotSentToRecipientsResponse = require ('../Model/GetDefinitionsNotSentToRecipientsResponse');
 const GetEmailDefinitionsResponse = require ('../Model/GetEmailDefinitionsResponse');
@@ -28,6 +27,7 @@ const SendEmailToMultipleRecipientsRequest = require ('../Model/SendEmailToMulti
 const SendEmailToSingleRecipientRequest = require ('../Model/SendEmailToSingleRecipientRequest');
 const SendSmsToMultipleRecipientsRequest = require ('../Model/SendSmsToMultipleRecipientsRequest');
 const SendSmsToSingleRecipientRequest = require ('../Model/SendSmsToSingleRecipientRequest');
+const SmsDefinition = require ('../Model/SmsDefinition');
 const UpdateEmailDefinitionRequest = require ('../Model/UpdateEmailDefinitionRequest');
 const UpdateSmsDefinitionRequest = require ('../Model/UpdateSmsDefinitionRequest');
 const BaseApi = require('./BaseApi');
@@ -55,8 +55,8 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
     /**
      * createEmailDefinition
      * Creates the definition for an email.
-     * @param {module:Model/CreateEmailDefinitionRequest} body JSON Parameters
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/CreateEmailDefinitionRequest} and HTTP response
+     * @param {module:Model/EmailDefinition} body JSON Parameters
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/EmailDefinition} and HTTP response
      */
     createEmailDefinitionWithHttpInfo(caller, body) {
       let postBody = body;
@@ -91,8 +91,8 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
     /**
      * createEmailDefinition
      * Creates the definition for an email.
-     * @param {module:Model/CreateEmailDefinitionRequest} body JSON Parameters
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/CreateEmailDefinitionRequest}
+     * @param {module:Model/EmailDefinition} body JSON Parameters
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/EmailDefinition}
      */
     createEmailDefinition(body) {
       return this.createEmailDefinitionWithHttpInfo('createEmailDefinition', body)
@@ -105,8 +105,8 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
     /**
      * createSmsDefinition
      * Creates the definition for an SMS.
-     * @param {module:Model/CreateSmsDefinitionRequest} body JSON Parameters
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/CreateSmsDefinitionRequest} and HTTP response
+     * @param {module:Model/SmsDefinition} body JSON Parameters
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/SmsDefinition} and HTTP response
      */
     createSmsDefinitionWithHttpInfo(caller, body) {
       let postBody = body;
@@ -141,8 +141,8 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
     /**
      * createSmsDefinition
      * Creates the definition for an SMS.
-     * @param {module:Model/CreateSmsDefinitionRequest} body JSON Parameters
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/CreateSmsDefinitionRequest}
+     * @param {module:Model/SmsDefinition} body JSON Parameters
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/SmsDefinition}
      */
     createSmsDefinition(body) {
       return this.createSmsDefinitionWithHttpInfo('createSmsDefinition', body)
@@ -360,7 +360,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * getEmailDefinition
      * Gets email definition configuration details for a definition key.
      * @param {String} definitionKey Unique identifier of the definition to get
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/CreateEmailDefinitionRequest} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/EmailDefinition} and HTTP response
      */
     getEmailDefinitionWithHttpInfo(caller, definitionKey) {
       let postBody = null;
@@ -397,7 +397,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * getEmailDefinition
      * Gets email definition configuration details for a definition key.
      * @param {String} definitionKey Unique identifier of the definition to get
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/CreateEmailDefinitionRequest}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/EmailDefinition}
      */
     getEmailDefinition(definitionKey) {
       return this.getEmailDefinitionWithHttpInfo('getEmailDefinition', definitionKey)
@@ -742,7 +742,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * getSmsDefinition
      * Gets SMS definition configuration details for a definition key.
      * @param {String} definitionKey Unique identifier of the definition to get
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/CreateSmsDefinitionRequest} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/SmsDefinition} and HTTP response
      */
     getSmsDefinitionWithHttpInfo(caller, definitionKey) {
       let postBody = null;
@@ -779,7 +779,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * getSmsDefinition
      * Gets SMS definition configuration details for a definition key.
      * @param {String} definitionKey Unique identifier of the definition to get
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/CreateSmsDefinitionRequest}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/SmsDefinition}
      */
     getSmsDefinition(definitionKey) {
       return this.getSmsDefinitionWithHttpInfo('getSmsDefinition', definitionKey)
@@ -903,7 +903,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * Updates a specific email definition.
      * @param {String} definitionKey Unique identifier of the definition.
      * @param {module:Model/UpdateEmailDefinitionRequest} body JSON Parameters
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/CreateEmailDefinitionRequest} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/EmailDefinition} and HTTP response
      */
     partiallyUpdateEmailDefinitionWithHttpInfo(caller, definitionKey, body) {
       let postBody = body;
@@ -946,7 +946,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * Updates a specific email definition.
      * @param {String} definitionKey Unique identifier of the definition.
      * @param {module:Model/UpdateEmailDefinitionRequest} body JSON Parameters
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/CreateEmailDefinitionRequest}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/EmailDefinition}
      */
     partiallyUpdateEmailDefinition(definitionKey, body) {
       return this.partiallyUpdateEmailDefinitionWithHttpInfo('partiallyUpdateEmailDefinition', definitionKey, body)
@@ -961,7 +961,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * Updates a specific SMS definition.
      * @param {String} definitionKey Unique identifier of the definition.
      * @param {module:Model/UpdateSmsDefinitionRequest} body JSON Parameters
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/CreateSmsDefinitionRequest} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:Model/SmsDefinition} and HTTP response
      */
     partiallyUpdateSmsDefinitionWithHttpInfo(caller, definitionKey, body) {
       let postBody = body;
@@ -1004,7 +1004,7 @@ module.exports = class TransactionalMessagingApi extends BaseApi {
      * Updates a specific SMS definition.
      * @param {String} definitionKey Unique identifier of the definition.
      * @param {module:Model/UpdateSmsDefinitionRequest} body JSON Parameters
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/CreateSmsDefinitionRequest}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:Model/SmsDefinition}
      */
     partiallyUpdateSmsDefinition(definitionKey, body) {
       return this.partiallyUpdateSmsDefinitionWithHttpInfo('partiallyUpdateSmsDefinition', definitionKey, body)

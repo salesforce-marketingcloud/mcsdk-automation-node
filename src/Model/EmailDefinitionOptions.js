@@ -21,14 +21,14 @@ const ApiClient = require ('../ApiClient');
 const InvalidModelException = require('../Exception/InvalidModelException');
 
 /**
-* The CreateEmailDefinitionOptionsRequest model module.
-* @module Model/CreateEmailDefinitionOptionsRequest
+* The EmailDefinitionOptions model module.
+* @module Model/EmailDefinitionOptions
 * @version 1.0.0
 */
-module.exports = class CreateEmailDefinitionOptionsRequest{
+module.exports = class EmailDefinitionOptions{
     /**
-    * Constructs a new <code>CreateEmailDefinitionOptionsRequest</code>.
-    * @alias module:Model/CreateEmailDefinitionOptionsRequest
+    * Constructs a new <code>EmailDefinitionOptions</code>.
+    * @alias module:Model/EmailDefinitionOptions
     * @class
     */
 
@@ -38,15 +38,15 @@ module.exports = class CreateEmailDefinitionOptionsRequest{
     }
 
     /**
-    * Constructs a <code>CreateEmailDefinitionOptionsRequest</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>EmailDefinitionOptions</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:Model/CreateEmailDefinitionOptionsRequest} obj Optional instance to populate.
-    * @return {module:Model/CreateEmailDefinitionOptionsRequest} The populated <code>CreateEmailDefinitionOptionsRequest</code> instance.
+    * @param {module:Model/EmailDefinitionOptions} obj Optional instance to populate.
+    * @return {module:Model/EmailDefinitionOptions} The populated <code>EmailDefinitionOptions</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new CreateEmailDefinitionOptionsRequest();
+            obj = obj || new EmailDefinitionOptions();
 
             
             

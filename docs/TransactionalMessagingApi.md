@@ -30,7 +30,7 @@ Method | HTTP request | Description
 
 <a name="createEmailDefinition"></a>
 # **createEmailDefinition**
-> CreateEmailDefinitionRequest createEmailDefinition(body)
+> EmailDefinition createEmailDefinition(body)
 
 createEmailDefinition
 
@@ -42,7 +42,7 @@ const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
-let body = new SalesforceMarketingCloud.CreateEmailDefinitionRequest(); // CreateEmailDefinitionRequest | JSON Parameters
+let body = new SalesforceMarketingCloud.EmailDefinition(); // EmailDefinition | JSON Parameters
 
 apiInstance.createEmailDefinition(body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -56,11 +56,11 @@ apiInstance.createEmailDefinition(body).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**CreateEmailDefinitionRequest**](CreateEmailDefinitionRequest.md)| JSON Parameters | 
+ **body** | [**EmailDefinition**](EmailDefinition.md)| JSON Parameters | 
 
 ### Return type
 
-[**CreateEmailDefinitionRequest**](CreateEmailDefinitionRequest.md)
+[**EmailDefinition**](EmailDefinition.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ No authorization required
 
 <a name="createSmsDefinition"></a>
 # **createSmsDefinition**
-> CreateSmsDefinitionRequest createSmsDefinition(body)
+> SmsDefinition createSmsDefinition(body)
 
 createSmsDefinition
 
@@ -85,7 +85,7 @@ const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
 
 let apiInstance = new SalesforceMarketingCloud.TransactionalMessagingApi();
 
-let body = new SalesforceMarketingCloud.CreateSmsDefinitionRequest(); // CreateSmsDefinitionRequest | JSON Parameters
+let body = new SalesforceMarketingCloud.SmsDefinition(); // SmsDefinition | JSON Parameters
 
 apiInstance.createSmsDefinition(body).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -99,11 +99,11 @@ apiInstance.createSmsDefinition(body).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**CreateSmsDefinitionRequest**](CreateSmsDefinitionRequest.md)| JSON Parameters | 
+ **body** | [**SmsDefinition**](SmsDefinition.md)| JSON Parameters | 
 
 ### Return type
 
-[**CreateSmsDefinitionRequest**](CreateSmsDefinitionRequest.md)
+[**SmsDefinition**](SmsDefinition.md)
 
 ### Authorization
 
@@ -288,7 +288,7 @@ No authorization required
 
 <a name="getEmailDefinition"></a>
 # **getEmailDefinition**
-> CreateEmailDefinitionRequest getEmailDefinition(definitionKey)
+> EmailDefinition getEmailDefinition(definitionKey)
 
 getEmailDefinition
 
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CreateEmailDefinitionRequest**](CreateEmailDefinitionRequest.md)
+[**EmailDefinition**](EmailDefinition.md)
 
 ### Authorization
 
@@ -608,7 +608,7 @@ No authorization required
 
 <a name="getSmsDefinition"></a>
 # **getSmsDefinition**
-> CreateSmsDefinitionRequest getSmsDefinition(definitionKey)
+> SmsDefinition getSmsDefinition(definitionKey)
 
 getSmsDefinition
 
@@ -638,7 +638,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CreateSmsDefinitionRequest**](CreateSmsDefinitionRequest.md)
+[**SmsDefinition**](SmsDefinition.md)
 
 ### Authorization
 
@@ -744,7 +744,7 @@ No authorization required
 
 <a name="partiallyUpdateEmailDefinition"></a>
 # **partiallyUpdateEmailDefinition**
-> CreateEmailDefinitionRequest partiallyUpdateEmailDefinition(definitionKey, body)
+> EmailDefinition partiallyUpdateEmailDefinition(definitionKey, body)
 
 partiallyUpdateEmailDefinition
 
@@ -777,7 +777,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CreateEmailDefinitionRequest**](CreateEmailDefinitionRequest.md)
+[**EmailDefinition**](EmailDefinition.md)
 
 ### Authorization
 
@@ -790,7 +790,7 @@ No authorization required
 
 <a name="partiallyUpdateSmsDefinition"></a>
 # **partiallyUpdateSmsDefinition**
-> CreateSmsDefinitionRequest partiallyUpdateSmsDefinition(definitionKey, body)
+> SmsDefinition partiallyUpdateSmsDefinition(definitionKey, body)
 
 partiallyUpdateSmsDefinition
 
@@ -823,7 +823,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CreateSmsDefinitionRequest**](CreateSmsDefinitionRequest.md)
+[**SmsDefinition**](SmsDefinition.md)
 
 ### Authorization
 

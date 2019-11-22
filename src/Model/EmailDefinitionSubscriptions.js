@@ -21,14 +21,14 @@ const ApiClient = require ('../ApiClient');
 const InvalidModelException = require('../Exception/InvalidModelException');
 
 /**
-* The CreateEmailDefinitionSubscriptions model module.
-* @module Model/CreateEmailDefinitionSubscriptions
+* The EmailDefinitionSubscriptions model module.
+* @module Model/EmailDefinitionSubscriptions
 * @version 1.0.0
 */
-module.exports = class CreateEmailDefinitionSubscriptions{
+module.exports = class EmailDefinitionSubscriptions{
     /**
-    * Constructs a new <code>CreateEmailDefinitionSubscriptions</code>.
-    * @alias module:Model/CreateEmailDefinitionSubscriptions
+    * Constructs a new <code>EmailDefinitionSubscriptions</code>.
+    * @alias module:Model/EmailDefinitionSubscriptions
     * @class
     * @param list {String} Marketing Cloud external key of the list or all subscribers. Contains the subscriber keys and profile attributes.
     */
@@ -37,7 +37,7 @@ module.exports = class CreateEmailDefinitionSubscriptions{
         
         // verify the required parameter 'list' is set
         if(list === undefined || list === null){
-            throw new InvalidModelException('"list" is a required property for CreateEmailDefinitionSubscriptions and cannot be undefined or null');
+            throw new InvalidModelException('"list" is a required property for EmailDefinitionSubscriptions and cannot be undefined or null');
         }
         this['list'] = list;
         
@@ -47,15 +47,15 @@ module.exports = class CreateEmailDefinitionSubscriptions{
     }
 
     /**
-    * Constructs a <code>CreateEmailDefinitionSubscriptions</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>EmailDefinitionSubscriptions</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:Model/CreateEmailDefinitionSubscriptions} obj Optional instance to populate.
-    * @return {module:Model/CreateEmailDefinitionSubscriptions} The populated <code>CreateEmailDefinitionSubscriptions</code> instance.
+    * @param {module:Model/EmailDefinitionSubscriptions} obj Optional instance to populate.
+    * @return {module:Model/EmailDefinitionSubscriptions} The populated <code>EmailDefinitionSubscriptions</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new CreateEmailDefinitionSubscriptions();
+            obj = obj || new EmailDefinitionSubscriptions();
 
             
             

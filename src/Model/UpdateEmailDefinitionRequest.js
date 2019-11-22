@@ -13,9 +13,9 @@
 
 
 const ApiClient = require ('../ApiClient');
-const CreateEmailDefinitionContent = require ('./CreateEmailDefinitionContent');
-const CreateEmailDefinitionOptionsRequest = require ('./CreateEmailDefinitionOptionsRequest');
-const CreateEmailDefinitionSubscriptions = require ('./CreateEmailDefinitionSubscriptions');
+const EmailDefinitionContent = require ('./EmailDefinitionContent');
+const EmailDefinitionOptions = require ('./EmailDefinitionOptions');
+const EmailDefinitionSubscriptions = require ('./EmailDefinitionSubscriptions');
 
 
 
@@ -65,7 +65,7 @@ module.exports = class UpdateEmailDefinitionRequest{
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
             if (data.hasOwnProperty('content')) {
-                obj['content'] = CreateEmailDefinitionContent.constructFromObject(data['content']);
+                obj['content'] = EmailDefinitionContent.constructFromObject(data['content']);
             }
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
@@ -77,10 +77,10 @@ module.exports = class UpdateEmailDefinitionRequest{
                 obj['classification'] = ApiClient.convertToType(data['classification'], 'String');
             }
             if (data.hasOwnProperty('subscriptions')) {
-                obj['subscriptions'] = CreateEmailDefinitionSubscriptions.constructFromObject(data['subscriptions']);
+                obj['subscriptions'] = EmailDefinitionSubscriptions.constructFromObject(data['subscriptions']);
             }
             if (data.hasOwnProperty('options')) {
-                obj['options'] = CreateEmailDefinitionOptionsRequest.constructFromObject(data['options']);
+                obj['options'] = EmailDefinitionOptions.constructFromObject(data['options']);
             }
         }
         return obj;
@@ -92,7 +92,7 @@ module.exports = class UpdateEmailDefinitionRequest{
     */
     name = undefined;
     /**
-    * @member {module:Model/CreateEmailDefinitionContent} content
+    * @member {module:Model/EmailDefinitionContent} content
     */
     content = undefined;
     /**
@@ -111,11 +111,11 @@ module.exports = class UpdateEmailDefinitionRequest{
     */
     classification = undefined;
     /**
-    * @member {module:Model/CreateEmailDefinitionSubscriptions} subscriptions
+    * @member {module:Model/EmailDefinitionSubscriptions} subscriptions
     */
     subscriptions = undefined;
     /**
-    * @member {module:Model/CreateEmailDefinitionOptionsRequest} options
+    * @member {module:Model/EmailDefinitionOptions} options
     */
     options = undefined;
 

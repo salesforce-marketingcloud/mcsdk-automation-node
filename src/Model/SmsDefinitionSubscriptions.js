@@ -21,14 +21,14 @@ const ApiClient = require ('../ApiClient');
 const InvalidModelException = require('../Exception/InvalidModelException');
 
 /**
-* The CreateSmsDefinitionSubscriptions model module.
-* @module Model/CreateSmsDefinitionSubscriptions
+* The SmsDefinitionSubscriptions model module.
+* @module Model/SmsDefinitionSubscriptions
 * @version 1.0.0
 */
-module.exports = class CreateSmsDefinitionSubscriptions{
+module.exports = class SmsDefinitionSubscriptions{
     /**
-    * Constructs a new <code>CreateSmsDefinitionSubscriptions</code>.
-    * @alias module:Model/CreateSmsDefinitionSubscriptions
+    * Constructs a new <code>SmsDefinitionSubscriptions</code>.
+    * @alias module:Model/SmsDefinitionSubscriptions
     * @class
     * @param shortCode {String} The short code for the mobile transmissions for each message on this definition.
     * @param countryCode {String} The country code associated with the shortCode for the mobile transmissions for each message on this definition.
@@ -38,13 +38,13 @@ module.exports = class CreateSmsDefinitionSubscriptions{
         
         // verify the required parameter 'shortCode' is set
         if(shortCode === undefined || shortCode === null){
-            throw new InvalidModelException('"shortCode" is a required property for CreateSmsDefinitionSubscriptions and cannot be undefined or null');
+            throw new InvalidModelException('"shortCode" is a required property for SmsDefinitionSubscriptions and cannot be undefined or null');
         }
         this['shortCode'] = shortCode;
         
         // verify the required parameter 'countryCode' is set
         if(countryCode === undefined || countryCode === null){
-            throw new InvalidModelException('"countryCode" is a required property for CreateSmsDefinitionSubscriptions and cannot be undefined or null');
+            throw new InvalidModelException('"countryCode" is a required property for SmsDefinitionSubscriptions and cannot be undefined or null');
         }
         this['countryCode'] = countryCode;
         
@@ -53,15 +53,15 @@ module.exports = class CreateSmsDefinitionSubscriptions{
     }
 
     /**
-    * Constructs a <code>CreateSmsDefinitionSubscriptions</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>SmsDefinitionSubscriptions</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:Model/CreateSmsDefinitionSubscriptions} obj Optional instance to populate.
-    * @return {module:Model/CreateSmsDefinitionSubscriptions} The populated <code>CreateSmsDefinitionSubscriptions</code> instance.
+    * @param {module:Model/SmsDefinitionSubscriptions} obj Optional instance to populate.
+    * @return {module:Model/SmsDefinitionSubscriptions} The populated <code>SmsDefinitionSubscriptions</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new CreateSmsDefinitionSubscriptions();
+            obj = obj || new SmsDefinitionSubscriptions();
 
             
             

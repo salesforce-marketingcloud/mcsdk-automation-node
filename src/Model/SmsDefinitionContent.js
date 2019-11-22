@@ -21,14 +21,14 @@ const ApiClient = require ('../ApiClient');
 const InvalidModelException = require('../Exception/InvalidModelException');
 
 /**
-* The CreateSmsDefinitionContent model module.
-* @module Model/CreateSmsDefinitionContent
+* The SmsDefinitionContent model module.
+* @module Model/SmsDefinitionContent
 * @version 1.0.0
 */
-module.exports = class CreateSmsDefinitionContent{
+module.exports = class SmsDefinitionContent{
     /**
-    * Constructs a new <code>CreateSmsDefinitionContent</code>.
-    * @alias module:Model/CreateSmsDefinitionContent
+    * Constructs a new <code>SmsDefinitionContent</code>.
+    * @alias module:Model/SmsDefinitionContent
     * @class
     * @param message {String} The message content that you want sent with each message. Use substitution strings and AMPscript to personalize the message.
     */
@@ -37,22 +37,22 @@ module.exports = class CreateSmsDefinitionContent{
         
         // verify the required parameter 'message' is set
         if(message === undefined || message === null){
-            throw new InvalidModelException('"message" is a required property for CreateSmsDefinitionContent and cannot be undefined or null');
+            throw new InvalidModelException('"message" is a required property for SmsDefinitionContent and cannot be undefined or null');
         }
         this['message'] = message;
         
     }
 
     /**
-    * Constructs a <code>CreateSmsDefinitionContent</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>SmsDefinitionContent</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:Model/CreateSmsDefinitionContent} obj Optional instance to populate.
-    * @return {module:Model/CreateSmsDefinitionContent} The populated <code>CreateSmsDefinitionContent</code> instance.
+    * @param {module:Model/SmsDefinitionContent} obj Optional instance to populate.
+    * @return {module:Model/SmsDefinitionContent} The populated <code>SmsDefinitionContent</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new CreateSmsDefinitionContent();
+            obj = obj || new SmsDefinitionContent();
 
             
             

@@ -13,8 +13,8 @@
 
 
 const ApiClient = require ('../ApiClient');
-const CreateSmsDefinitionContent = require ('./CreateSmsDefinitionContent');
-const CreateSmsDefinitionSubscriptions = require ('./CreateSmsDefinitionSubscriptions');
+const SmsDefinitionContent = require ('./SmsDefinitionContent');
+const SmsDefinitionSubscriptions = require ('./SmsDefinitionSubscriptions');
 
 
 
@@ -23,38 +23,38 @@ const CreateSmsDefinitionSubscriptions = require ('./CreateSmsDefinitionSubscrip
 const InvalidModelException = require('../Exception/InvalidModelException');
 
 /**
-* The CreateSmsDefinitionRequest model module.
-* @module Model/CreateSmsDefinitionRequest
+* The SmsDefinition model module.
+* @module Model/SmsDefinition
 * @version 1.0.0
 */
-module.exports = class CreateSmsDefinitionRequest{
+module.exports = class SmsDefinition{
     /**
-    * Constructs a new <code>CreateSmsDefinitionRequest</code>.
-    * @alias module:Model/CreateSmsDefinitionRequest
+    * Constructs a new <code>SmsDefinition</code>.
+    * @alias module:Model/SmsDefinition
     * @class
     * @param definitionKey {String} Unique, user-generated key to access the definition object.
     * @param name {String} Name of the definition. Must be unique.
-    * @param content {module:Model/CreateSmsDefinitionContent} 
-    * @param subscriptions {module:Model/CreateSmsDefinitionSubscriptions} 
+    * @param content {module:Model/SmsDefinitionContent} 
+    * @param subscriptions {module:Model/SmsDefinitionSubscriptions} 
     */
 
     constructor(definitionKey, name, content, subscriptions) {
         
         // verify the required parameter 'definitionKey' is set
         if(definitionKey === undefined || definitionKey === null){
-            throw new InvalidModelException('"definitionKey" is a required property for CreateSmsDefinitionRequest and cannot be undefined or null');
+            throw new InvalidModelException('"definitionKey" is a required property for SmsDefinition and cannot be undefined or null');
         }
         this['definitionKey'] = definitionKey;
         
         // verify the required parameter 'name' is set
         if(name === undefined || name === null){
-            throw new InvalidModelException('"name" is a required property for CreateSmsDefinitionRequest and cannot be undefined or null');
+            throw new InvalidModelException('"name" is a required property for SmsDefinition and cannot be undefined or null');
         }
         this['name'] = name;
         
         // verify the required parameter 'content' is set
         if(content === undefined || content === null){
-            throw new InvalidModelException('"content" is a required property for CreateSmsDefinitionRequest and cannot be undefined or null');
+            throw new InvalidModelException('"content" is a required property for SmsDefinition and cannot be undefined or null');
         }
         this['content'] = content;
         
@@ -64,7 +64,7 @@ module.exports = class CreateSmsDefinitionRequest{
         
         // verify the required parameter 'subscriptions' is set
         if(subscriptions === undefined || subscriptions === null){
-            throw new InvalidModelException('"subscriptions" is a required property for CreateSmsDefinitionRequest and cannot be undefined or null');
+            throw new InvalidModelException('"subscriptions" is a required property for SmsDefinition and cannot be undefined or null');
         }
         this['subscriptions'] = subscriptions;
         
@@ -72,15 +72,15 @@ module.exports = class CreateSmsDefinitionRequest{
     }
 
     /**
-    * Constructs a <code>CreateSmsDefinitionRequest</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>SmsDefinition</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:Model/CreateSmsDefinitionRequest} obj Optional instance to populate.
-    * @return {module:Model/CreateSmsDefinitionRequest} The populated <code>CreateSmsDefinitionRequest</code> instance.
+    * @param {module:Model/SmsDefinition} obj Optional instance to populate.
+    * @return {module:Model/SmsDefinition} The populated <code>SmsDefinition</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new CreateSmsDefinitionRequest();
+            obj = obj || new SmsDefinition();
 
             
             
@@ -93,7 +93,7 @@ module.exports = class CreateSmsDefinitionRequest{
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
             if (data.hasOwnProperty('content')) {
-                obj['content'] = CreateSmsDefinitionContent.constructFromObject(data['content']);
+                obj['content'] = SmsDefinitionContent.constructFromObject(data['content']);
             }
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
@@ -108,7 +108,7 @@ module.exports = class CreateSmsDefinitionRequest{
                 obj['description'] = ApiClient.convertToType(data['description'], 'String');
             }
             if (data.hasOwnProperty('subscriptions')) {
-                obj['subscriptions'] = CreateSmsDefinitionSubscriptions.constructFromObject(data['subscriptions']);
+                obj['subscriptions'] = SmsDefinitionSubscriptions.constructFromObject(data['subscriptions']);
             }
             if (data.hasOwnProperty('requestId')) {
                 obj['requestId'] = ApiClient.convertToType(data['requestId'], 'String');
@@ -128,7 +128,7 @@ module.exports = class CreateSmsDefinitionRequest{
     */
     name = undefined;
     /**
-    * @member {module:Model/CreateSmsDefinitionContent} content
+    * @member {module:Model/SmsDefinitionContent} content
     */
     content = undefined;
     /**
@@ -152,7 +152,7 @@ module.exports = class CreateSmsDefinitionRequest{
     */
     description = undefined;
     /**
-    * @member {module:Model/CreateSmsDefinitionSubscriptions} subscriptions
+    * @member {module:Model/SmsDefinitionSubscriptions} subscriptions
     */
     subscriptions = undefined;
     /**

@@ -13,9 +13,9 @@
 
 
 const ApiClient = require ('../ApiClient');
-const CreateEmailDefinitionContent = require ('./CreateEmailDefinitionContent');
-const CreateEmailDefinitionOptionsRequest = require ('./CreateEmailDefinitionOptionsRequest');
-const CreateEmailDefinitionSubscriptions = require ('./CreateEmailDefinitionSubscriptions');
+const EmailDefinitionContent = require ('./EmailDefinitionContent');
+const EmailDefinitionOptions = require ('./EmailDefinitionOptions');
+const EmailDefinitionSubscriptions = require ('./EmailDefinitionSubscriptions');
 
 
 
@@ -24,19 +24,19 @@ const CreateEmailDefinitionSubscriptions = require ('./CreateEmailDefinitionSubs
 const InvalidModelException = require('../Exception/InvalidModelException');
 
 /**
-* The CreateEmailDefinitionRequest model module.
-* @module Model/CreateEmailDefinitionRequest
+* The EmailDefinition model module.
+* @module Model/EmailDefinition
 * @version 1.0.0
 */
-module.exports = class CreateEmailDefinitionRequest{
+module.exports = class EmailDefinition{
     /**
-    * Constructs a new <code>CreateEmailDefinitionRequest</code>.
-    * @alias module:Model/CreateEmailDefinitionRequest
+    * Constructs a new <code>EmailDefinition</code>.
+    * @alias module:Model/EmailDefinition
     * @class
     * @param name {String} Name of the definition. Must be unique.
     * @param definitionKey {String} Unique, user-generated key to access the definition object.
-    * @param content {module:Model/CreateEmailDefinitionContent} 
-    * @param subscriptions {module:Model/CreateEmailDefinitionSubscriptions} 
+    * @param content {module:Model/EmailDefinitionContent} 
+    * @param subscriptions {module:Model/EmailDefinitionSubscriptions} 
     */
 
     constructor(name, definitionKey, content, subscriptions) {
@@ -44,13 +44,13 @@ module.exports = class CreateEmailDefinitionRequest{
         
         // verify the required parameter 'name' is set
         if(name === undefined || name === null){
-            throw new InvalidModelException('"name" is a required property for CreateEmailDefinitionRequest and cannot be undefined or null');
+            throw new InvalidModelException('"name" is a required property for EmailDefinition and cannot be undefined or null');
         }
         this['name'] = name;
         
         // verify the required parameter 'definitionKey' is set
         if(definitionKey === undefined || definitionKey === null){
-            throw new InvalidModelException('"definitionKey" is a required property for CreateEmailDefinitionRequest and cannot be undefined or null');
+            throw new InvalidModelException('"definitionKey" is a required property for EmailDefinition and cannot be undefined or null');
         }
         this['definitionKey'] = definitionKey;
         
@@ -62,13 +62,13 @@ module.exports = class CreateEmailDefinitionRequest{
         
         // verify the required parameter 'content' is set
         if(content === undefined || content === null){
-            throw new InvalidModelException('"content" is a required property for CreateEmailDefinitionRequest and cannot be undefined or null');
+            throw new InvalidModelException('"content" is a required property for EmailDefinition and cannot be undefined or null');
         }
         this['content'] = content;
         
         // verify the required parameter 'subscriptions' is set
         if(subscriptions === undefined || subscriptions === null){
-            throw new InvalidModelException('"subscriptions" is a required property for CreateEmailDefinitionRequest and cannot be undefined or null');
+            throw new InvalidModelException('"subscriptions" is a required property for EmailDefinition and cannot be undefined or null');
         }
         this['subscriptions'] = subscriptions;
         
@@ -76,15 +76,15 @@ module.exports = class CreateEmailDefinitionRequest{
     }
 
     /**
-    * Constructs a <code>CreateEmailDefinitionRequest</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>EmailDefinition</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:Model/CreateEmailDefinitionRequest} obj Optional instance to populate.
-    * @return {module:Model/CreateEmailDefinitionRequest} The populated <code>CreateEmailDefinitionRequest</code> instance.
+    * @param {module:Model/EmailDefinition} obj Optional instance to populate.
+    * @return {module:Model/EmailDefinition} The populated <code>EmailDefinition</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new CreateEmailDefinitionRequest();
+            obj = obj || new EmailDefinition();
 
             
             
@@ -118,13 +118,13 @@ module.exports = class CreateEmailDefinitionRequest{
                 obj['modifiedDate'] = ApiClient.convertToType(data['modifiedDate'], 'Date');
             }
             if (data.hasOwnProperty('content')) {
-                obj['content'] = CreateEmailDefinitionContent.constructFromObject(data['content']);
+                obj['content'] = EmailDefinitionContent.constructFromObject(data['content']);
             }
             if (data.hasOwnProperty('subscriptions')) {
-                obj['subscriptions'] = CreateEmailDefinitionSubscriptions.constructFromObject(data['subscriptions']);
+                obj['subscriptions'] = EmailDefinitionSubscriptions.constructFromObject(data['subscriptions']);
             }
             if (data.hasOwnProperty('options')) {
-                obj['options'] = CreateEmailDefinitionOptionsRequest.constructFromObject(data['options']);
+                obj['options'] = EmailDefinitionOptions.constructFromObject(data['options']);
             }
         }
         return obj;
@@ -176,15 +176,15 @@ module.exports = class CreateEmailDefinitionRequest{
     */
     modifiedDate = undefined;
     /**
-    * @member {module:Model/CreateEmailDefinitionContent} content
+    * @member {module:Model/EmailDefinitionContent} content
     */
     content = undefined;
     /**
-    * @member {module:Model/CreateEmailDefinitionSubscriptions} subscriptions
+    * @member {module:Model/EmailDefinitionSubscriptions} subscriptions
     */
     subscriptions = undefined;
     /**
-    * @member {module:Model/CreateEmailDefinitionOptionsRequest} options
+    * @member {module:Model/EmailDefinitionOptions} options
     */
     options = undefined;
 

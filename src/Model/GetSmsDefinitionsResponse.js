@@ -13,7 +13,7 @@
 
 
 const ApiClient = require ('../ApiClient');
-const CreateSmsDefinitionRequest = require ('./CreateSmsDefinitionRequest');
+const SmsDefinition = require ('./SmsDefinition');
 
 
 
@@ -61,7 +61,7 @@ module.exports = class GetSmsDefinitionsResponse{
                 obj['requestId'] = ApiClient.convertToType(data['requestId'], 'String');
             }
             if (data.hasOwnProperty('definitions')) {
-                obj['definitions'] = ApiClient.convertToType(data['definitions'], [CreateSmsDefinitionRequest]);
+                obj['definitions'] = ApiClient.convertToType(data['definitions'], [SmsDefinition]);
             }
             if (data.hasOwnProperty('count')) {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
@@ -82,7 +82,7 @@ module.exports = class GetSmsDefinitionsResponse{
     */
     requestId = undefined;
     /**
-    * @member {Array.<module:Model/CreateSmsDefinitionRequest>} definitions
+    * @member {Array.<module:Model/SmsDefinition>} definitions
     */
     definitions = undefined;
     /**

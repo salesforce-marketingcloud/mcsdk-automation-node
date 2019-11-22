@@ -13,8 +13,8 @@
 
 
 const ApiClient = require ('../ApiClient');
-const CreateSmsDefinitionContent = require ('./CreateSmsDefinitionContent');
-const CreateSmsDefinitionSubscriptions = require ('./CreateSmsDefinitionSubscriptions');
+const SmsDefinitionContent = require ('./SmsDefinitionContent');
+const SmsDefinitionSubscriptions = require ('./SmsDefinitionSubscriptions');
 
 
 
@@ -62,7 +62,7 @@ module.exports = class UpdateSmsDefinitionRequest{
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
             if (data.hasOwnProperty('content')) {
-                obj['content'] = CreateSmsDefinitionContent.constructFromObject(data['content']);
+                obj['content'] = SmsDefinitionContent.constructFromObject(data['content']);
             }
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
@@ -71,7 +71,7 @@ module.exports = class UpdateSmsDefinitionRequest{
                 obj['description'] = ApiClient.convertToType(data['description'], 'String');
             }
             if (data.hasOwnProperty('subscriptions')) {
-                obj['subscriptions'] = CreateSmsDefinitionSubscriptions.constructFromObject(data['subscriptions']);
+                obj['subscriptions'] = SmsDefinitionSubscriptions.constructFromObject(data['subscriptions']);
             }
         }
         return obj;
@@ -83,7 +83,7 @@ module.exports = class UpdateSmsDefinitionRequest{
     */
     name = undefined;
     /**
-    * @member {module:Model/CreateSmsDefinitionContent} content
+    * @member {module:Model/SmsDefinitionContent} content
     */
     content = undefined;
     /**
@@ -97,7 +97,7 @@ module.exports = class UpdateSmsDefinitionRequest{
     */
     description = undefined;
     /**
-    * @member {module:Model/CreateSmsDefinitionSubscriptions} subscriptions
+    * @member {module:Model/SmsDefinitionSubscriptions} subscriptions
     */
     subscriptions = undefined;
 

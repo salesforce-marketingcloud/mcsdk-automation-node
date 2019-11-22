@@ -403,15 +403,15 @@ const EnvironmentConfigProvider = require('../../../src/EnvironmentConfigProvide
       let shortCode = environmentConfigProvider.get('SFMC_SHORT_CODE');
       let countryCode = environmentConfigProvider.get('SFMC_COUNTRY_CODE');
       let keyword = environmentConfigProvider.get('SFMC_KEYWORD');
-      let smsDefinitionSubscriptions = new SalesforceMarketingCloud.CreateSmsDefinitionSubscriptions(shortCode, countryCode);
+      let smsDefinitionSubscriptions = new SalesforceMarketingCloud.SmsDefinitionSubscriptions(shortCode, countryCode);
       smsDefinitionSubscriptions.keyword = keyword;
 
-      let smsDefinitionContent = new SalesforceMarketingCloud.CreateSmsDefinitionContent('SMS definition message content');
+      let smsDefinitionContent = new SalesforceMarketingCloud.SmsDefinitionContent('SMS definition message content');
 
       let smsDefinitionKey = getUUID(10);
       let smsDefinitionName = 'SMSdefinition ' + getUUID(10);
 
-      return new SalesforceMarketingCloud.CreateSmsDefinitionRequest(smsDefinitionKey, smsDefinitionName, smsDefinitionContent, smsDefinitionSubscriptions);
+      return new SalesforceMarketingCloud.SmsDefinition(smsDefinitionKey, smsDefinitionName, smsDefinitionContent, smsDefinitionSubscriptions);
     }
 
   async function createEmailDefinitionObject() {
@@ -422,10 +422,10 @@ const EnvironmentConfigProvider = require('../../../src/EnvironmentConfigProvide
 
     let emailDefinitionName = 'EmailDefinition ' + getUUID(10);
     let emailDefinitionKey= 'EmailDefinition ' + getUUID(10);
-    let emailDefinitionContent = new SalesforceMarketingCloud.CreateEmailDefinitionContent(customerKey);
-    let emailDefinitionSubscriptions = new SalesforceMarketingCloud.CreateEmailDefinitionSubscriptions("All Subscribers");
+    let emailDefinitionContent = new SalesforceMarketingCloud.EmailDefinitionContent(customerKey);
+    let emailDefinitionSubscriptions = new SalesforceMarketingCloud.EmailDefinitionSubscriptions("All Subscribers");
 
-    return new SalesforceMarketingCloud.CreateEmailDefinitionRequest(emailDefinitionName, emailDefinitionKey, emailDefinitionContent, emailDefinitionSubscriptions);
+    return new SalesforceMarketingCloud.EmailDefinition(emailDefinitionName, emailDefinitionKey, emailDefinitionContent, emailDefinitionSubscriptions);
   }
 
   function createAssetObject() {
