@@ -20,7 +20,7 @@ Creates a new asset.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
 
 let apiInstance = new SalesforceMarketingCloud.AssetApi();
 
@@ -63,7 +63,7 @@ Deletes an asset.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
 
 let apiInstance = new SalesforceMarketingCloud.AssetApi();
 
@@ -106,7 +106,7 @@ Gets an asset by ID.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
 
 let apiInstance = new SalesforceMarketingCloud.AssetApi();
 
@@ -149,7 +149,7 @@ Updates part of an asset.
 
 ### Example
 ```javascript
-const SalesforceMarketingCloud = require ('SalesforceMarketingCloud');
+const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
 
 let apiInstance = new SalesforceMarketingCloud.AssetApi();
 
