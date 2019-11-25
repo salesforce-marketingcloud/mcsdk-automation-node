@@ -1,0 +1,21 @@
+{
+  "name": "salesforce-marketing-cloud-sdk",
+  "version": "1.0.0",
+  "description": "The Salesforce Marketing Cloud Node.js SDK",
+  "license": "BSD-3-Clause",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/unit --recursive && node_modules/.bin/mocha test/integration --recursive --timeout {TEST_TIMEOUT}s"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "superagent": "^5.1.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^6.2.0",
+    "sinon": "^7.4.2"
+  }
+}
