@@ -44,10 +44,10 @@ class SampleHelper {
         let customerKey = createAssetResponse.customerKey;
         let emailDefinitionName = 'EmailDefinitionName' + SampleHelper.getUUID(5);      // it has be unique
         let emailDefinitionKey = 'EmailDefinitionKey' + SampleHelper.getUUID(5);        // it has be unique
-        let emailDefinitionContent = new SalesforceMarketingCloud.CreateEmailDefinitionContent(customerKey);
-        let emailDefinitionSubscriptions = new SalesforceMarketingCloud.CreateEmailDefinitionSubscriptions(SUBSCRIBERS_LIST_KEY);
+        let emailDefinitionContent = new SalesforceMarketingCloud.EmailDefinitionContent(customerKey);
+        let emailDefinitionSubscriptions = new SalesforceMarketingCloud.EmailDefinitionSubscriptions(SUBSCRIBERS_LIST_KEY);
 
-        return new SalesforceMarketingCloud.CreateEmailDefinitionRequest(emailDefinitionName, emailDefinitionKey, emailDefinitionContent, emailDefinitionSubscriptions);
+        return new SalesforceMarketingCloud.EmailDefinition(emailDefinitionName, emailDefinitionKey, emailDefinitionContent, emailDefinitionSubscriptions);
     }
 
     static getUUID(length) {
