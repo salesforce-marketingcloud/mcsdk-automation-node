@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createCampaign**](CampaignApi.md#createCampaign) | **POST** /hub/v1/campaigns | createCampaign
 [**deleteCampaignById**](CampaignApi.md#deleteCampaignById) | **DELETE** /hub/v1/campaigns/{id} | deleteCampaignById
+[**getAllCampaigns**](CampaignApi.md#getAllCampaigns) | **GET** /hub/v1/campaigns | getAllCampaigns
 [**getCampaignById**](CampaignApi.md#getCampaignById) | **GET** /hub/v1/campaigns/{id} | getCampaignById
 
 
@@ -85,6 +86,43 @@ Name | Type | Description  | Notes
 ### Return type
 
 null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+<a name="getAllCampaigns"></a>
+# **getAllCampaigns**
+> GetAllCampaignsResponse getAllCampaigns()
+
+getAllCampaigns
+
+Gets all campaigns.
+
+### Example
+```javascript
+const SalesforceMarketingCloud = require ('salesforce-marketing-cloud-sdk');
+
+let apiInstance = new SalesforceMarketingCloud.CampaignApi();
+apiInstance.getAllCampaigns().then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**GetAllCampaignsResponse**](GetAllCampaignsResponse.md)
 
 ### Authorization
 
