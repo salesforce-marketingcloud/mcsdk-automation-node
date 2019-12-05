@@ -1,6 +1,6 @@
 {
   "name": "salesforce-marketing-cloud-sdk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The Salesforce Marketing Cloud Node.js SDK",
   "license": "BSD-3-Clause",
   "main": "src/index.js",
