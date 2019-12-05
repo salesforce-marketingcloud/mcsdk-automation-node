@@ -13,7 +13,7 @@
 
 
 const ApiClient = require ('../ApiClient');
-const EmailDefinition = require ('./EmailDefinition');
+const Campaign = require ('./Campaign');
 
 
 
@@ -22,14 +22,14 @@ const EmailDefinition = require ('./EmailDefinition');
 const InvalidModelException = require('../Exception/InvalidModelException');
 
 /**
-* The GetEmailDefinitionsResponse model module.
-* @module Model/GetEmailDefinitionsResponse
+* The GetAllCampaignsResponse model module.
+* @module Model/GetAllCampaignsResponse
 * @version 1.1.0
 */
-module.exports = class GetEmailDefinitionsResponse{
+module.exports = class GetAllCampaignsResponse{
     /**
-    * Constructs a new <code>GetEmailDefinitionsResponse</code>.
-    * @alias module:Model/GetEmailDefinitionsResponse
+    * Constructs a new <code>GetAllCampaignsResponse</code>.
+    * @alias module:Model/GetAllCampaignsResponse
     * @class
     */
 
@@ -39,29 +39,25 @@ module.exports = class GetEmailDefinitionsResponse{
         
         
         
-        
     }
 
     /**
-    * Constructs a <code>GetEmailDefinitionsResponse</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>GetAllCampaignsResponse</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:Model/GetEmailDefinitionsResponse} obj Optional instance to populate.
-    * @return {module:Model/GetEmailDefinitionsResponse} The populated <code>GetEmailDefinitionsResponse</code> instance.
+    * @param {module:Model/GetAllCampaignsResponse} obj Optional instance to populate.
+    * @return {module:Model/GetAllCampaignsResponse} The populated <code>GetAllCampaignsResponse</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new GetEmailDefinitionsResponse();
+            obj = obj || new GetAllCampaignsResponse();
 
             
             
             
 
-            if (data.hasOwnProperty('requestId')) {
-                obj['requestId'] = ApiClient.convertToType(data['requestId'], 'String');
-            }
-            if (data.hasOwnProperty('definitions')) {
-                obj['definitions'] = ApiClient.convertToType(data['definitions'], [EmailDefinition]);
+            if (data.hasOwnProperty('items')) {
+                obj['items'] = ApiClient.convertToType(data['items'], [Campaign]);
             }
             if (data.hasOwnProperty('count')) {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
@@ -77,14 +73,9 @@ module.exports = class GetEmailDefinitionsResponse{
     }
 
     /**
-    * The ID of the request
-    * @member {String} requestId
+    * @member {Array.<module:Model/Campaign>} items
     */
-    requestId = undefined;
-    /**
-    * @member {Array.<module:Model/EmailDefinition>} definitions
-    */
-    definitions = undefined;
+    items = undefined;
     /**
     * Number of pages
     * @member {Number} count
@@ -96,7 +87,7 @@ module.exports = class GetEmailDefinitionsResponse{
     */
     page = undefined;
     /**
-    * Number of definitions, which are array elements, to return per paged response.
+    * Number of campaigns, which are array elements, to return per paged response.
     * @member {Number} pageSize
     */
     pageSize = undefined;
